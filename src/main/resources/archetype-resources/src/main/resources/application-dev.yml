@@ -1,6 +1,6 @@
 server:
   port: 8080
-  name: start
+  name: ${artifactId}
 
 spring:
     datasource:
@@ -8,7 +8,7 @@ spring:
         username: root
         password: RzBeEvBJS0qM
 info:
-  service-info: start
+  service-info: ${artifactId}
   api-doc: /swagger-ui.html
 swagger:
   basePath: ${package}
