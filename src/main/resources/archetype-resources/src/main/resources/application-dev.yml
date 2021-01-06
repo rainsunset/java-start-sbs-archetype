@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  name: ${artifactId}
+
+spring:
+    datasource:
+        url: jdbc:mysql://139.159.244.233:3316/demo?allowMultiQueries=true
+        username: root
+        password: RzBeEvBJS0qM
+info:
+  service-info: ${artifactId}
+  api-doc: /swagger-ui.html
+swagger:
+  basePath: ${package}
+  title: API信息
+  description: API信息有疑问请联系相关开发人员
+  contact: ligw
+  version: @project.version@
